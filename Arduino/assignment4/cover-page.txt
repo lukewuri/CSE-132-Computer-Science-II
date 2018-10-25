@@ -1,0 +1,54 @@
+# CSE132 (Assignment 4) Cover Page
+
+By submitting this assignment, you certify that you have read, understood, and
+complied with the CSE 132 collaboration policy. You are also certifying that
+the following information is complete and truthful.
+
+
+## Basic Information
+
+Name:Luke Wuri
+WUSTL Key:lwuri
+
+and if two are partnered together
+
+Name:
+WUSTL Key:
+
+List people who helped you on this assignment 
+(outside of TAs, instructors, or partners):
+Daniel Pollak, Shawn Zhang
+List outside sources you used on this assignment
+(other than those linked in the writeup):
+arduino.cc, wikipedia, 
+
+
+## Assignment Overview
+
+What challenged you about this assignment?
+Coming up with the idea to use switch statements was challenging... until 
+it was shown in one of the guides for that week. Also, converting data types
+to make sure we had proper temperature readings (I kept getting 0 for awhile
+because dividing by 1023 rounded the A/D reading to 0) was a little challenging.
+What did you learn during this assignment?
+I learned an implementation of case statements, how to send data from analog devices,
+to Arduino, to Java. Also, the assignment helped me grasp hex and ASCII in
+coding.
+Were you unable to complete anything? Explain:
+I do not feel like I left anything unfinished, although, I did feel that case 31 and 30
+were a little pointless besides seeing if our connection was working between Arduino
+and Java. Besides during the beginning, I did not use too many error reports when 
+I wrote my assignment.
+Is there anything we should know about your work on this assignment:
+Late coupon was used.
+
+
+## Assignment Questions
+
+What is the meaning of a message that containts the following byte sequence?
+"0x21 0x30 0x00 0x04 0x4f 0x6f 0x70 0x73"
+"! 0 null end O o p s" ->> "! 0    O o p s"
+Our temperature sensor works down to -40 degrees C.  If you receive the
+following byte sequence, is the sensor above or below freezing?
+"0x21 0x34 0x94 0x30 0x10 0x1f"
+"! 40", the sensor would be above freezing.

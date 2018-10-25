@@ -1,0 +1,77 @@
+# CSE132 Assignment 2 Cover Page
+
+By submitting this assignment, you certify that you have read, understood, and
+complied with the CSE132 collaboration policy. You are also certifying that
+the following information is complete and truthful.
+
+
+## Basic Information
+
+Name: Luke Wuri
+Partner:
+Email Address: lwuri@wustl.edu
+Lab Section: 1:00 PM to 2:30 PM, Room 216
+
+List people who helped you on this assignment 
+(outside of TAs, instructors, or partners): Shawn Zhang
+
+List outside sources you used on this assignment
+(other than those linked in the writeup):https://learn.sparkfun.com/tutorials/sik-experiment-guide-for-arduino---v32/experiment-3-driving-an-rgb-led
+
+
+
+## Assignment Overview
+
+What challenged you about this assignment?
+The most challenging part about the lab for me was wiring the arduino/breadboard.
+I felt that it took awhile to get used to converting a standard circuit diagram
+to a physical breadboard. 
+
+What did you learn during this assignment?
+
+I learned about the RGB led and the basics on setting up a circuit using
+resistors, pontentiometers, and leds. It was also good practice on writing 
+Arduino/C code.
+
+Were you unable to complete anything? Explain:
+
+The "#define" was not working for me when I wanted to set constant variables
+for my LEDs and pins. Instead, I just use the "=" operator.
+
+Is there anything we should know about your work on this assignment:
+
+I am using a late pass for this assignment and presented it at the Tuesday
+8-10 PM TA hours.
+
+
+## Assignment Questions
+
+In a few sentences, what does PWM do, on a physical level? Can the Arduino 
+actually output a voltage that is not 0 or 5 Volts?
+
+From the Arduino reference page, PWM is described to allow Arduino to read voltage
+between 5 and 0 by manipulating the time that the LED is turned on. For example,
+the LED typically is either HIGH, completely on or LOW, completely off. By using PWM 
+and analog outputs, Arduino can have the LED on HIGH at very low frequencies to
+create a signal that is much less than 5 V. On the other hand, you can also show
+a brightness corresponding to around 4.5 V, so the "on time" or frequency of HIGH would
+be relatively high.
+
+In a few sentences, how does your program convert the input from `analogRead` 
+into a voltage? Could you generalize this into an equation to get a voltage
+given an `analogRead`?
+
+First the analogRead method retrieves the value from the potentiometer, returning a value
+between 0 and 1023. The value is then multiplied by (255/1023) to convert the value to a
+value that the RGB LED could effectively read as the lights do not get noticeably brighter
+after surpassing 255; only the 0 to 255 range is valuable to the lights and analogWrite. However,
+we can convert this to analogRead value to a corresponding voltage by multiplying this value by 5/255. 
+You can then print this value to the serial monitor to the user so they can see what voltage values are being
+perceived on the light. Your equation could be analogReadValue*(255/1023)*(5/255) which simplifies to 
+analogReadValue*(5/1023).
+
+
+Why do you have to put resistors on the circuit?
+An LED by itself can infinitely draw from the power source which can cause the light to burn out.
+The resistor, using Ohm's law to confirm, will limit the amount of current that flows through 
+the LED as there is resistance in the resistor, so I, current is limited; I= V/R.

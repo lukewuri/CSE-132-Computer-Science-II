@@ -1,0 +1,76 @@
+# CSE132 (Assignment 3) Cover Page
+
+By submitting this assignment, you certify that you have read, understood, and
+complied with the CSE 132 collaboration policy. You are also certifying that
+the following information is complete and truthful.
+
+
+## Basic Information
+
+Name: Luke Wuri
+WUSTL Key:lwuri
+
+and if two are partnered together
+
+Name:
+WUSTL Key:
+
+List people who helped you on this assignment 
+(outside of TAs, instructors, or partners):
+
+List outside sources you used on this assignment
+(other than those linked in the writeup): wikipedia.org
+
+
+
+## Assignment Overview
+
+What challenged you about this assignment?
+
+The most challenging aspect of the assignment was using delta time and understanding
+how to implement it. 
+
+What did you learn during this assignment?
+
+I learned that delta time was much more useful and practical than the delay function
+and how to use the delta time. I also learned that crickets can be used to gauge temperature.
+
+Were you unable to complete anything? Explain:
+
+I do not believe I failed to complete anything.
+
+Is there anything we should know about your work on this assignment:
+The #define line would not work for me so I declared variables using 'const' instead.
+
+
+## Assignment Questions
+
+Dolbear's Law is an equation that gives you a temperature from a number of
+cricket chirps in one minute. What is the equation that provides the chirp 
+period given a temperature in Celcius?
+
+Period = (60)/(7T-30). My work is shown in the comments of my ASSIGNMENT3FINALSDFSDFSDF.ino file.
+
+Using the datasheet for your temperature sensor, the equation you derived
+from it, and you knowledge of the Arduino, what is the expected `analogRead()`
+value for 25 Celcius? 15 Celcius? Include any assumptions, like 
+`analogReference()`, and a little bit of your work (an equation is fine).
+
+At 25 Celsius, the analogRead() would be approximately (0.750 Volts)*(1023/1.1 V) = 697.5.
+
+At 15 Celsius, the analogRead() would need some more calculation as the table does not give 
+a voltage value at 15 Celsius. We use our equation T = 100(V) -50. Solving for Voltage, we get 
+(T+50)/100 = V. Thus, when T = 15, V would equal 0.650 Volts. Now we can convert to the
+analogRead() unit. (0.650 Volts)*(1023/1.1V) = 604.5.
+
+What temperature range is the TMP36 specified for? How accurate is it in this
+range? This can be answered looking solely at the overview and specifications
+pages.
+
+The TMP36 is specified for -40 C to 125 C. These are accurate to 10 millivolts as every
+10 millivolts corresponds to 10 celsius. Since it covers a bigger range, it is not as accurate
+if it accounted only for a 10 degree range. Aside from the scale factor and large range, it appears
+that it is plus or minus 1 degree celsius in its readings.
+
+
+

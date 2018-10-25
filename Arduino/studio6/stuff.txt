@@ -1,0 +1,50 @@
+Identifying current directory: pwd
+Navigate: cd
+edit text: nano
+update stuff
+
+3.1
+a. 01011010 = 5a; 1111 1111 0011 1100 = ff3c; 0110 0111 = 67
+b. 0xfe = 1111 1110; 0x4321 = 0100 0011 0010 0001; 0x20 = 0010 0000
+c. 0x132 = 16^2 + 3*16 + 2*1 = 306; 0xcd = 12*16 + 13*1 = 205; 0x11 = 16 + 1 = 17
+d. 732 = 0x2d3; 100 = 0x64; 50 = 0x32
+
+3.2
+a.  1111 1111 two's complement; 1000 0001 8 bit sign magnitude; 0111 1110 excess 127
+b.  1111 1110 two's complement; 1000 0010 8 bit sign magnitude; 0111 1101 excess 127
+c. -2^7
+d. 2^0
+e. 15
+
+3.3
+a. 32 Java, 16 C
+b. 8 C, 16 Java
+c. 
+
+4. x = 0x54 = 0101 0100; y = 0xab = 1010 1011
+a. x&y = 00000000
+b. x|y = 11111111
+c. ~x | ~y = 1111 1111
+d. ~x & !y = 00000000
+e. x && y = 0
+f. x||y = 1
+g !x ||!y = 0
+h. ~x&&~y = 0
+
+5.Delay cannot keep track of time while the delay method is called so simultaneous tracks of time can be inaccurate.
+Delta-time can still be inaccurate due to processing speeds.
+
+6. yes, it is reasonable. We approximately see a reasonable value of (0, 1023), prolly around 600.
+
+7. analogWrite() can be passed values between 0 and 255.
+---_________---_________---_________---_________
+
+8. According to Kerry Li, the anode will have a higher voltage.
+
+200 milli ohms.
+
+orientation of the resistor does not matter
+resistor is first
+
+red red brown gold has a resistance of 221 milli ohms with 5% error. yellow orange red gold has a resistance of
+432 milli homs with 5% error.

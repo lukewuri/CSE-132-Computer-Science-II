@@ -1,0 +1,61 @@
+# CSE132 (Assignment 5) Cover Page
+
+By submitting this assignment, you certify that you have read, understood, and
+complied with the CSE 132 collaboration policy. You are also certifying that
+the following information is complete and truthful.
+
+
+## Basic Information
+
+Name:Kevin Lee
+WUSTL Key:kevinlee
+
+and if two are partnered together
+
+Name:Luke Wuri
+WUSTL Key: lwuri
+
+List people who helped you on this assignment 
+(outside of TAs, instructors, or partners):
+
+List outside sources you used on this assignment
+(other than those linked in the writeup):
+
+
+
+## Assignment Overview
+
+What challenged you about this assignment?
+
+The most challenging aspects of this assignment were primarily the section about java and
+sending the inputs from java to Arduino. We felt this was difficult since it involved
+some pieces of code/information that came from studios/optional parts of studios that
+we did not completely finish.
+
+What did you learn during this assignment?
+
+We learned how to use morse code and also how to use an output stream from our PC to Arduino.
+
+Were you unable to complete anything? Explain:
+
+No.
+
+Is there anything we should know about your work on this assignment:
+Late coupon used for both partners.
+
+
+## Assignment Questions
+
+What is the Morse code encoding of the message "Hello world"?
+
+.... . .-.. .-.. --- / .-- --- .-. .-.. -..
+
+We said in the writeup that we "cheated" on the normal rules for .h files
+and .c files.  What could you do (don't actually do it, just describe it)
+so that your morse sketch follows the rules strictly (i.e., no actual
+executable code in a .h file)?
+
+You would move the convertByte method to a .c file and remove it from the header file.
+
+
+

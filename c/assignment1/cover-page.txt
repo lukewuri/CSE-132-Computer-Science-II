@@ -1,0 +1,86 @@
+# CSE132 Assignment 1 Cover Page
+
+By submitting this assignment, you certify that you have read, understood, and
+complied with the CSE132 collaboration policy. You are also certifying that
+the following information is complete and truthful.
+
+
+## Basic Information
+
+Name:Luke Wuri
+Partner:William Guo
+Email Address:lwuri@wustl.edu
+Lab Section:A
+
+List people who helped you on this assignment 
+(outside of TAs, instructors, or partners): Shawn Zhang
+
+List outside sources you used on this assignment
+(other than those linked in the writeup):
+http://www.binaryhexconverter.com/binary-to-decimal-converter
+http://mathforum.org/library/drmath/view/55924.html
+https://ftp.gnu.org/old-gnu/Manuals/make-3.79.1/html_chapter/make_10.html
+
+
+## Assignment Overview
+
+What challenged you about this assignment?
+
+I felt this assignment contained less specific instructions compared to the
+previous studios we have had. This challenged me as it forced me to think
+about the given problems instead of having instructions given to me. For example
+the section where we had to edit the Makefile/shifted line was relatively vague
+and it took me some time testing/thinking to make sure I used the correct
+operators on the line I had edited.
+
+What did you learn during this assignment?
+
+I learned about the syntax revolving boolean/bitwise operators. I felt the logic 
+used with these were relatively old information from old classes (240, 260) but
+it was important to learn how to use these in C. I also learned/gained experience
+working with "negative" binary numbers and how computers interpret them.
+
+Were you unable to complete anything? Explain:
+
+I do not believe I failed to complete anything.
+
+Is there anything we should know about your work on this assignment:
+
+No.
+
+
+## Assignment Questions
+
+1. Solve the following bitwise and boolean operations, assuming they are written in C and the numbers are `int`s.
+
+	a. 0 || 23 == 1
+	b. 0 | 23 == 23
+	c. 5 && 0 == 0
+	d. 5 & 3 == 1
+	e. !4 == 0
+	f. ~5 == 250
+	g. 7 >> 3 == 0
+	h. 3 ^ 5 == 6
+
+2. What is most negative number you can represent in a two's-complement 3-byte datatype?  Write your answer in terms of 2 to some power.
+	-(2^23)
+3. Explain in a couple of sentences the advantages of breaking your program into multiple files and using header files to declare functions.
+
+	Having multiple files in a program is useful for organization purposes
+as one large piece of code can be confusing and overwhelming. With the use of
+headers and various files for your programs, your code can easier to understand.
+It is also faster to compile when using header files and multiple files for your program
+
+
+4. What is `make`'s implicit rule for compiling `.c` files into `.o` files?
+
+Make's implicit rule for compiling '.c' into '.o' files is:
+%.o : %.c
+	$(CC) -c $(CFLAGS) $(CPPFLAGS) $< -o $@ 
+
+Where $@ and $< are target and source files.
+
+Source:https://ftp.gnu.org/old-gnu/Manuals/make-3.79.1/html_chapter/make_10.html
+
+
+
